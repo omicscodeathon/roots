@@ -192,6 +192,7 @@ This is separate from the testing data above and was chosen specifically to shar
 
 ## Repository Structure
 
+```
 roots/
 |-- accessions/
 |   `-- accessions.txt
@@ -206,7 +207,7 @@ roots/
 |   |-- notes.txt
 |   |-- papers_url.txt
 |   |-- slides_url.txt
-|   `-- execution_map.md          <- NEW
+|   `-- execution_map.md        
 |-- figures/
 |   `-- ROOTS_Codeathon_Aug2026_Part1.png
 |-- notebooks/
@@ -218,11 +219,12 @@ roots/
 |-- workflow/
 |   |-- project_lifecycle.txt
 |   `-- steps.txt
-|-- environments/                  <- NEW FOLDER
+|-- environments/                 
 |   |-- colab_environment.yml
 |   `-- kaggle_environment.yml
 |-- LICENSE
 `-- README.md
+```
 
 ---
 
