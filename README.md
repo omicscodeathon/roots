@@ -83,11 +83,11 @@ MD system preparation, MD production, binding free energy refinement, trajectory
 
 ## The Molecular Dynamics Bottleneck
 
-MD gives the pipeline its name, and it is also the natural bottleneck. Free-tier notebook sessions have real limits, and a workflow built around thermodynamic simulation has to plan for that from the start rather than discover it mid-run.
+MD gives the pipeline its name, and it is also the natural bottleneck. Free-tier notebook sessions have real limits, and a workflow built around thermodynamic simulation has to plan for it from the start.
 
 - A recompiled GROMACS build on Colab writes checkpoints to Google Drive at fixed intervals, so a session timeout becomes a pause instead of lost work. The method is published and benchmarked (Karagöl & Karagöl, 2024).
 - Trajectory length follows convergence rather than a fixed number: each system runs at least 50 ns and extends only as far as RMSD plateauing requires, up to a 100 ns ceiling.
-- Scope is narrowed upstream: one to two hits per target, two to six systems total, with enhanced sampling and metadynamics set aside as future extensions rather than run by default.
+- Scope is narrowed upstream: one to two hits per target, two to six systems total, with enhanced sampling and metadynamics set aside as future extensions.
 
 Together, these keep the MD workload bounded and achievable on free-tier hardware instead of open-ended.
 
@@ -138,7 +138,7 @@ Comparable pipelines exist in the literature. None combines what ROOTS combines.
 
 ## Points of Novelty
 
-No single tool in ROOTS is new. The contribution sits in the architecture.
+No single tool in ROOTS is new. The contribution primarily sits in the MD validation.
 
 - Target selection is omics-derived across 2-3 candidates rather than fixed in advance, which sets it apart from comparable published pipelines that start from one pre-chosen target.
 - The comparator design corrects a weakness documented across ovarian cancer transcriptomic work: TCGA-OV's near-absence of matched normal samples. The harmonised TCGA-versus-GTEx design states the confound plainly and reinforces it with GEO concordance, the fallopian-tube check, and HPA confirmation.
@@ -149,7 +149,7 @@ No single tool in ROOTS is new. The contribution sits in the architecture.
 
 ## Validation and Benchmarking Strategy
 
-No wet-lab confirmation exists at this stage. Validation is built into each computational layer instead of deferred to a single endpoint.
+Validation is built into each computational layer rather than deferred to a single endpoint or wet-lab confirmation from future research efforts.
 
 - Target selection is checked against an independent measurement type, HPA immunohistochemistry, rather than resting on transcriptomics alone, plus a fallopian-tube literature check for tissue-of-origin artefacts.
 - Structural reliability is benchmarked with numbers: TM-score against known folds and pocket-level pLDDT for predicted structures, re-docking RMSD against a known ligand for every target.
@@ -172,7 +172,7 @@ The data used to build and tune the pipeline.
 
 ### Independent validation dataset
 
-Separate from the testing data above, chosen specifically to share no provenance with it.
+This is separate from the testing data above and was chosen specifically to share no provenance with it.
 
 - **Target-level cohort:** an ovarian cancer cohort outside TCGA, GTEx, and the internal GEO validation series, such as the Australian Ovarian Cancer Study, ICGC-OV, or a second, distinct GEO series. This checks whether the prioritised target's dysregulation holds in a population and sequencing effort with no shared lineage to the discovery data.
 - **Orthogonal molecular layer:** CPTAC-OV mass-spectrometry proteomics (Zhang et al., 2016), a proteomic characterisation of 174 ovarian tumours also studied by TCGA. It overlaps TCGA-OV at the patient level through a different assay than the HPA immunohistochemistry already in use internally.
