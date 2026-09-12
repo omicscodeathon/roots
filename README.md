@@ -207,8 +207,6 @@ ROOTS/
 `-- README.md
 ```
 
-`[Placeholder: insert a repository or folder screenshot here, if useful.]`
-
 ---
 
 ## Current State
