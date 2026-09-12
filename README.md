@@ -192,20 +192,37 @@ Separate from the testing data above, chosen specifically to share no provenance
 
 ## Repository Structure
 
-```
-ROOTS/
-|-- 01_target_prioritisation/
-|-- 02_structure_and_library/
-|-- 03_screening_and_selection/
-|-- 04_md_simulation/
-|-- environments/
+roots/
+|-- accessions/
+|   `-- accessions.txt
+|-- dashboard/
+|   |-- Run_App.R
+|   |-- Server.R
+|   |-- UI.R
+|   `-- dependences.R
+|-- data/
+|   `-- (raw pulls only, gitignored: TCGA-OV, GTEx, COCONUT, GDC/cBioPortal MAFs)
+|-- docs/
+|   |-- notes.txt
+|   |-- papers_url.txt
+|   |-- slides_url.txt
+|   `-- execution_map.md          <- NEW
+|-- figures/
+|   `-- ROOTS_Codeathon_Aug2026_Part1.png
+|-- notebooks/
+|-- output/
+|   `-- report.txt
+|-- scripts/
+|-- src/
+|-- vignettes/
+|-- workflow/
+|   |-- project_lifecycle.txt
+|   `-- steps.txt
+|-- environments/                  <- NEW FOLDER
 |   |-- colab_environment.yml
 |   `-- kaggle_environment.yml
-|-- docs/
-|   `-- execution_map.md
-|-- outputs/
+|-- LICENSE
 `-- README.md
-```
 
 ---
 
