@@ -14,7 +14,7 @@ Ovarian cancer kills more people than most gynaecological cancers because it is 
 
 Natural compounds and phytochemicals are a large, comparatively under-characterised chemical space. The field has produced some of oncology's most important drugs from this space, and most of it remains unexplored against specific cancer targets.
 
-ROOTS narrows that gap using omics-derived target discovery and free-tier compute to find natural-product candidates worth pursuing further, without the resource-intensive screening infrastructure most pipelines assume from the start. My pipeline is not a substitute for wet-lab validation or clinical development. It is a methodologically rigorous first step toward treatment options that do not assume the patient can already afford the alternative.
+ROOTS narrows that gap using omics-derived target discovery and free-tier compute to find natural-product candidates worth pursuing further, without the resource-intensive screening infrastructure most pipelines assume from the start. The pipeline is not a substitute for wet-lab validation or clinical development. It is a methodologically rigorous first step toward treatment options that do not assume the patient can already afford the alternative.
 
 ## Table of Contents
 
