@@ -38,7 +38,7 @@ ROOTS narrows that gap using omics-derived target discovery and free-tier comput
 
 The pipeline runs in three phases. Each phase depends entirely on the output of the one before it.
 
-`![ROOTS three-phase pipeline](figures/ROOTS_Codeathon_Aug2026_Part1.png)`
+![ROOTS three-phase pipeline](figures/ROOTS_Codeathon_Aug2026_Part1.png)
 
 **Phase 1: Target and structure discovery**
 
