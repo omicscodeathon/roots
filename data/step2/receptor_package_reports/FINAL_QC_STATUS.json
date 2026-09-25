@@ -1,0 +1,20 @@
+{
+  "status": "PASS_WITH_MANUAL_HOLO_REVIEW",
+  "all_required_files_present": true,
+  "preferred_donor": "5FHZ chain D",
+  "donor_pose_RMSD_A": 4.894031047821045,
+  "holo_ready_for_MD_or_quantitative_docking": false,
+  "apo_PDBQT_ready_for_protocol_validation": true,
+  "reason_holo_not_ready": "NAD requires validated cofactor-specific parameterisation and local minimisation.",
+  "template_provenance": {
+    "5FHZ": {
+      "used_as_folding_template_by_this_prediction": true,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    },
+    "8DR9": {
+      "used_as_folding_template_by_this_prediction": false,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    }
+  },
+  "equal_treatment_policy": "5FHZ and 8DR9 scored with the identical pipeline and selection rule; folding-template overlap is provenance metadata only."
+}

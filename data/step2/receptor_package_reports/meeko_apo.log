@@ -1,0 +1,40 @@
+COMMAND:
+/usr/local/bin/mk_prepare_receptor.py --read_pqr /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4_cleaned.pqr --charge_model read --output_basename /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4 --write_pdbqt /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4.pdbqt --allow_bad_res
+
+STDOUT:
+Reading a PQR file. The following options or configurations will be ignored: 
+  - default_altloc
+  - wanted_altloc
+Reading structures and partial charges from PQR. 
+
+
+STDERR:
+[RDKit] ERROR:[05:38:06] Explicit valence for atom # 7 C, 5, is greater than permitted
+Traceback (most recent call last):
+  File "/usr/local/bin/mk_prepare_receptor.py", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/meeko/cli/mk_prepare_receptor.py", line 656, in main
+    polymer = Polymer.from_pqr_string(
+        pdb_string,
+    ...<5 lines>...
+        blunt_ends=blunt_ends,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/meeko/polymer.py", line 1190, in from_pqr_string
+    tmp_raw_input_mols = cls._pqr_to_residue_mols(
+        pqr_string,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/meeko/polymer.py", line 2056, in _pqr_to_residue_mols
+    pdbmol, _, missed_altloc, needed_altloc = _aux_altloc_mol_build(
+                                              ~~~~~~~~~~~~~~~~~~~~~^
+        atom_field_list,
+        ^^^^^^^^^^^^^^^^
+        requested_altloc,
+        ^^^^^^^^^^^^^^^^^
+        default_altloc,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/meeko/utils/rdkitutils.py", line 415, in _aux_altloc_mol_build
+    _ = Chem.SanitizeMol(pdbmol)
+rdkit.Chem.rdchem.AtomValenceException: Explicit valence for atom # 7 C, 5, is greater than permitted

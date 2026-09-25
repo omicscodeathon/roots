@@ -1,0 +1,4 @@
+gene,source,pdb_id,resolution,method,needs_af3,validation_status
+ALDH3B2,AF3_NEEDED,,91.77622827533217,,True,ALDH3B2_HOLO_VALIDATED
+CD24,AF3_NEEDED,,,,True,OUT_OF_SCOPE_NOT_DOCKED
+FOLR1,PDB,4KM6,1.55,X-ray,False,PDB_QUALITY_GATED

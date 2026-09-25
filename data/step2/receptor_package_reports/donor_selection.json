@@ -1,0 +1,23 @@
+{
+  "best_5FHZ_chain": "D",
+  "best_8DR9_chain": "A",
+  "NAD_pose_RMSD_between_best_donors_A": 4.894031047821045,
+  "disagreement_threshold_A": 3.0,
+  "review_required": true,
+  "preferred_provisional_donor": {
+    "template": "5FHZ",
+    "chain": "D"
+  },
+  "selection_rule": "zero severe clashes, then lowest robust pocket C-alpha RMSD, then higher sequence identity and coverage -- identical rule applied to both templates",
+  "template_provenance": {
+    "5FHZ": {
+      "used_as_folding_template_by_this_prediction": true,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    },
+    "8DR9": {
+      "used_as_folding_template_by_this_prediction": false,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    }
+  },
+  "interpretation": "Independent donor NAD poses disagree; keep both receptor states and visually review before declaring a definitive holo receptor."
+}

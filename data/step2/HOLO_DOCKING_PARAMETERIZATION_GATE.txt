@@ -1,0 +1,8 @@
+HOLO DOCKING PARAMETERIZATION GATE
+===================================
+
+The provisional holo PDB contains transferred NAD coordinates, but NAD has not yet received a validated cofactor-specific charge and atom-type model.
+
+Do not use the provisional holo receptor for quantitative docking or molecular dynamics until NAD parameterization and restrained local minimization have been completed and documented.
+
+The independently prepared apo PDBQT may be used for docking-protocol validation.

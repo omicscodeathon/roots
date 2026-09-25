@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-15T16:50:34.491368",
+  "resolution_cutoff": 3.0,
+  "pdb_entries_checked": 3,
+  "pdb_resolved": 1,
+  "af3_needed": 2,
+  "structures_dir": "/content/drive/MyDrive/ROOTS_Pipeline/Step2/structures"
+}

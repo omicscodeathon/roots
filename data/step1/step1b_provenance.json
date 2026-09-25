@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-15T07:23:46.491962",
+  "geo_validation_series": "GSE26712",
+  "geo_platform": "Affymetrix HG-U133A",
+  "cbio_study": "ov_tcga_pan_can_atlas_2018",
+  "candidates_after_de": 746,
+  "candidates_after_geo": 81,
+  "mutation_genes_queried": 50,
+  "hpa_genes_checked": 79,
+  "hpa_confirmed_ovarian_protein": 2,
+  "final_shortlist_size": 10
+}

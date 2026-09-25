@@ -1,0 +1,9 @@
+gene,selected_model,ranking_score,ptm,fraction_disordered,has_clash,output_pdb
+CD24,fold_af3_cd24_model_0.cif,0.84,0.45,0.79,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/CD24_AF3.pdb
+CST1,fold_af3_cst1_model_0.cif,0.88,0.76,0.24,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/CST1_AF3.pdb
+SCGB1D1,fold_af3_scgb1d1_model_0.cif,0.79,0.68,0.22,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/SCGB1D1_AF3.pdb
+TRIM29,fold_af3_trim29_model_0.cif,0.7,0.4,0.6,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/TRIM29_AF3.pdb
+MT1HL1,fold_af3_mt1hl1_model_0.cif,0.69,0.42,0.54,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/MT1HL1_AF3.pdb
+DEFB126,fold_af3_defb126_model_0.cif,0.7,0.43,0.54,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/DEFB126_AF3.pdb
+CST4,fold_af3_cst4_model_0.cif,0.87,0.75,0.24,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/CST4_AF3.pdb
+GPR31,fold_af3_gpr31_model_0.cif,0.85,0.82,0.07,0.0,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/structures/GPR31_AF3.pdb

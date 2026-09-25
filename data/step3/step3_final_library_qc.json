@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-16T13:27:48.588082",
+  "final_library_size": 328869,
+  "duplicates_removed": 4957,
+  "dedup_method": "standard_inchi_key",
+  "MW_mean": 332.33,
+  "MW_range": [
+    1.0,
+    500.0
+  ],
+  "LogP_mean": 2.57,
+  "compounds_with_stereocenters": null
+}

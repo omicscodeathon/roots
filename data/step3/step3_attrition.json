@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-16T13:36:12.843175",
+  "coconut_source_url": "https://coconut.s3.uni-jena.de/prod/downloads/2026-09/coconut_csv_lite-09-2026.zip",
+  "coconut_version": "September 2026",
+  "coconut_raw_count": 738827,
+  "after_ro5_veber_pains": 333826,
+  "stereochem_examined": "see logs/stereo_check_summary.json",
+  "after_stereochem": "see logs/stereo_check_summary.json",
+  "stereochem_pass_rate_pct": "unknown",
+  "duplicates_removed": 4957,
+  "library_cap_setting": 333826,
+  "library_cap_was_binding": true,
+  "final_count": 328869,
+  "seed": 42,
+  "filters_applied": [
+    "Lipinski Ro5",
+    "Veber",
+    "PAINS",
+    "Stereochemistry integrity (ETKDGv3 embedding + MMFF94, maxIters=500)",
+    "Duplicate removal (InChIKey)",
+    "Size cap at 333826 (non-binding, full validated pool retained)"
+  ],
+  "scope_note": "Ro5/Veber filtering applied to NP library is a stated scope limitation; NPs legitimately violate these rules",
+  "compute_note": "Stereochemistry checking executed on Kaggle (CPU-only script kernel) due to Colab free-tier RAM constraints; all other steps on Colab."
+}

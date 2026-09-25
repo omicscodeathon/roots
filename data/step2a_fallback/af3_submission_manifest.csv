@@ -1,0 +1,9 @@
+gene,uniprot_accession,sequence_length,fasta_path,af3_job_name_suggested,ligand_cofactor,submission_status
+CD24,P25063,80,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/CD24.fasta,CD24_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+CST1,P01037,141,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/CST1.fasta,CST1_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+SCGB1D1,O95968,90,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/SCGB1D1.fasta,SCGB1D1_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+TRIM29,Q14134,588,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/TRIM29.fasta,TRIM29_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+MT1HL1,P0DM35,61,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/MT1HL1.fasta,MT1HL1_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+DEFB126,Q9BYW3,111,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/DEFB126.fasta,DEFB126_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+CST4,P01036,141,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/CST4.fasta,CST4_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION
+GPR31,O00270,319,/content/drive/MyDrive/ROOTS_Pipeline/Step2a/sequences/GPR31.fasta,GPR31_holo_none,none — no cofactor identified for this batch; add manually per-gene if warranted,PENDING_MANUAL_SUBMISSION

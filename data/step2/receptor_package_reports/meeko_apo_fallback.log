@@ -1,0 +1,137 @@
+FALLBACK COMMAND:
+/usr/local/bin/mk_prepare_receptor.py -r /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4.pdb -o /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4.pdbqt --allow_bad_res
+
+STDOUT:
+usage: mk_prepare_receptor.py [-h] [--read_pdb PDB_FILENAME]
+                              [--read_pqr PQR_FILENAME] [-i MACROMOL_FILENAME]
+                              [-o OUTPUT_BASENAME] [-p [PDBQT_FILENAME ...]]
+                              [-j [JSON_FILENAME ...]]
+                              [--write_pdb [PDB_FILENAME ...]]
+                              [-g [GPF_FILENAME ...]]
+                              [-v [VINA_BOX_FILENAME ...]]
+                              [--debug_fn DEBUG_FN] [-n SET_TEMPLATE]
+                              [-d DELETE_RESIDUES] [-b BLUNT_ENDS]
+                              [--add_templates ADD_TEMPLATES]
+                              [--cache_templates [CACHE_TEMPLATES]]
+                              [--mk_config JSON_FILENAME] [-a]
+                              [--default_altloc DEFAULT_ALTLOC]
+                              [--wanted_altloc WANTED_ALTLOC] [-f FLEXRES]
+                              [-t ROT_TERMINAL_GROUP]
+                              [--charge_model {gasteiger,espaloma,zero,read}]
+                              [--box_size X Y Z] [--box_center X Y Z]
+                              [--box_center_off_reactive_res]
+                              [--box_enveloping FILENAME] [--padding PADDING]
+                              [-r REACTIVE_FLEXRES]
+                              [--reactive_name REACTIVE_NAME]
+                              [-s REACTIVE_NAME_SPECIFIC] [--r_eq_12 R_EQ_12]
+                              [--eps_12 EPS_12]
+                              [--r_eq_13_scaling R_EQ_13_SCALING]
+                              [--r_eq_14_scaling R_EQ_14_SCALING]
+
+options:
+  -h, --help            show this help message and exit
+
+Input/Output:
+  --read_pdb PDB_FILENAME
+                        reads PDB, not PDBQT, and does not use ProDy
+  --read_pqr PQR_FILENAME
+                        reads PQR and does not use ProDy
+  -i, --read_with_prody MACROMOL_FILENAME
+                        reads PDB/mmCIF file with Prody which can be installed
+                        from PyPI or conda-forge.
+  -o, --output_basename OUTPUT_BASENAME
+                        default basename for --write options used without
+                        filename
+  -p, --write_pdbqt [PDBQT_FILENAME ...]
+                        adds _rigid/_flex with flexible residues (filename
+                        defaults to --output_basename when not specified)
+  -j, --write_json [JSON_FILENAME ...]
+                        parameterized receptor (filename defaults to
+                        --output_basename when not specified)
+  --write_pdb [PDB_FILENAME ...]
+                        prepared receptor (must specify filename)
+  -g, --write_gpf [GPF_FILENAME ...]
+                        autogrid input file (filename defaults to
+                        --output_basename when not specified)
+  -v, --write_vina_box [VINA_BOX_FILENAME ...]
+                        config file for Vina with box dimensions (filename
+                        defaults to --output_basename when not specified_
+  --debug_fn DEBUG_FN   log debug level to filename
+
+Receptor perception:
+  -n, --set_template SET_TEMPLATE
+                        e.g. A:5,7=CYX,B:17=HID
+  -d, --delete_residues DELETE_RESIDUES
+                        e.g. A:350,B:15,16,17
+  -b, --blunt_ends BLUNT_ENDS
+                        e.g. A:123,200=2,A:1=0
+  --add_templates ADD_TEMPLATES
+                        Additional residue templates. Can be a JSON file path
+                        or 'resname:file.sdf'.
+  --cache_templates [CACHE_TEMPLATES]
+                        Turns on caching of ResidueChemTemplates (default is
+                        OFF) by this option and (optionally) a provided JSON
+                        filename. Default cache filename is:
+                        $HOME/.meeko_residue_chem_templates_cached.json) When
+                        the caching is ON, the templates for polymer
+                        construction will be read from the specified cache
+                        file and updates may be made to the same file in a
+                        cumulative manner.
+  --mk_config JSON_FILENAME
+                        [.json]
+  -a, --allow_bad_res   delete residues with missing atoms instead of raising
+                        error
+  --default_altloc DEFAULT_ALTLOC
+                        default alternate location (overridden by
+                        --wanted_altloc)
+  --wanted_altloc WANTED_ALTLOC
+                        require altloc for specific residues, e.g. :5=B,B:17=A
+  -f, --flexres FLEXRES
+                        specify the flexible residues by the chain ID and
+                        residue number, e.g. -f ":42,B:23" is equivalent to -f
+                        ":42" -f "B:23" (leave chain ID empty if omitted in
+                        input PDB or mmCIF)
+  -t, --rot_terminal_group ROT_TERMINAL_GROUP
+                        specify the residues for which to make terminal
+                        functional group rotatable by the chain ID and residue
+                        number, e.g. -t ":42,B:23" is equivalent to -t ":42"
+                        -t "B:23" (leave chain ID empty if omitted in input
+                        PDB or mmCIF)
+  --charge_model {gasteiger,espaloma,zero,read}
+                        default is gasteiger, 'zero' sets all zeros, 'read'
+                        requires --read_pqr
+
+Size and center of grid box:
+  --box_size X Y Z      size of grid box (x, y, z) in Angstrom
+  --box_center X Y Z    center of grid box (x, y, z) in Angstrom
+  --box_center_off_reactive_res
+                        project grid box center along CA-CB bond 5 A away from
+                        CB (only applicable when there is exactly one reactive
+                        flexible residue)
+  --box_enveloping FILENAME
+                        Box will envelop atoms in this file [.sdf .mol .mol2
+                        .pdb .pdbqt]
+  --padding PADDING     padding around atoms passed to --box_enveloping [A]
+
+Reactive:
+  -r, --reactive_flexres REACTIVE_FLEXRES
+                        same as --flexres but for reactive residues (max 8)
+  --reactive_name REACTIVE_NAME
+                        set name of reactive atom of a residue type, e.g:
+                        --reactive_name 'TRP:NE1'. Repeat flag for multiple
+                        assignments. Overridden by --reactive_name_specific
+  -s, --reactive_name_specific REACTIVE_NAME_SPECIFIC
+                        set name of reactive atom for an individual residue by
+                        the residue ID, e.g: -s 'A:42=NE2'. Residue will be
+                        reactive.
+  --r_eq_12 R_EQ_12     r_eq for reactive atoms (1-2 interaction)
+  --eps_12 EPS_12       epsilon for reactive atoms (1-2 interaction)
+  --r_eq_13_scaling R_EQ_13_SCALING
+                        r_eq scaling for 1-3 interaction across reactive atoms
+  --r_eq_14_scaling R_EQ_14_SCALING
+                        r_eq scaling for 1-4 interaction across reactive atoms
+
+Need input filename: use either -i/--read_with_prody, --read_pdb or --read_pqr
+
+
+STDERR:

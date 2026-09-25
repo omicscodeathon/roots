@@ -1,0 +1,21 @@
+ALDH3B2 target coordinates were obtained from a user-supplied OpenFold3 co-folded
+protein+NAD prediction for UniProt P48448; OpenFold provenance as recorded: {'openfold_version_or_commit': 'UNKNOWN - please fill in', 'weights_used': 'openfold3-p2-155k', 'msa_database': 'UNKNOWN - please fill in', 'date_generated': 'UNKNOWN - please fill in', 'inference_ckpt_path': '/root/.openfold3/of3-p2-155k.pt', 'msa_server_url': 'https://api.colabfold.com/', 'structure_format': 'cif', 'seeds': [42], 'template_entry_chain_ids': ['4l1o_A', '8bb8_A', '4qgk_B', '1ad3_B', '5fhz_E', '6tgw_D', '5abm_A', '4wp7_A', '5l2o_B', '7qk8_B', '7yob_F', '6alj_A', '3iwk_F', '6tgw_B', '5a2d_B', '7mjc_A', '6k10_A', '6try_A', '4o5h_C', '5gtk_C']}.
+The predicted sequence was verified against the canonical UniProt sequence for P48448, and the
+co-folded prediction's own confidence metrics (iptm, chain-pair iptm, gpde, clash flag) were checked
+against configured acceptance thresholds (see target_identity_qc.json). Experimental NAD-bound
+homologs PDB 5FHZ and 8DR9 were obtained from the wwPDB archive and scored with an identical
+sequence-guided pocket-fit pipeline: homolog sequences were aligned to ALDH3B2, and matched C-alpha
+atoms from residues within 8.0 A of homolog NAD were superposed with iterative
+2.5 A outlier trimming. NAD coordinates were transferred independently from all
+usable chains of both templates under the same selection rule (absence of heavy-atom contacts below
+1.5 A, lower pocket C-alpha RMSD, higher sequence identity/coverage). 5FHZ also
+appears among this prediction's own folding templates (['5FHZ']); that overlap is
+recorded as provenance only (see template_provenance in target_identity_qc.json) and was not used to
+reweight, reorder, or exclude either template -- 5FHZ and 8DR9 are reported side by side in
+final_5FHZ_8DR9_homolog_analysis.csv on equal footing. The provisional donor was 5FHZ chain
+D. The independent 5FHZ/8DR9 NAD-pose RMSD was 4.894 A; manual review
+required: True. Apo and holo protein branches were protonated independently at pH 7.4
+with PDB2PQR/PROPKA. NAD was excluded from PDB2PQR and recombined without claiming cofactor
+parameterisation. AlphaFold DB and AlphaFold Server outputs were not used anywhere in this workflow.
+Cite the OpenFold method paper, the specific OpenFold code/weights used (see openfold_model_info in
+source_manifest.json), and the original 5FHZ and 8DR9 structure publications.

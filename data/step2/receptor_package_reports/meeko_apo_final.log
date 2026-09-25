@@ -1,0 +1,13 @@
+COMMAND:
+/usr/local/bin/mk_prepare_receptor.py --read_pdb /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4_meeko_repaired.pdb --charge_model gasteiger --output_basename /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4 --write_pdbqt /content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4.pdbqt --allow_bad_res
+
+RETURN CODE:
+0
+
+STDOUT:
+
+Files written:
+/content/ROOTS_ALDH3B2/outputs/ALDH3B2_OpenFold_apo_pH7p4.pdbqt <-- static (i.e., rigid) receptor input file
+
+
+STDERR:

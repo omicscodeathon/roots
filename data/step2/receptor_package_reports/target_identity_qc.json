@@ -1,0 +1,67 @@
+{
+  "uniprot": "P48448",
+  "target_source": "OpenFold3 co-folded protein+NAD prediction (user-supplied)",
+  "protein_chain_id": "A",
+  "openfold_model_info": {
+    "openfold_version_or_commit": "UNKNOWN - please fill in",
+    "weights_used": "openfold3-p2-155k",
+    "msa_database": "UNKNOWN - please fill in",
+    "date_generated": "UNKNOWN - please fill in",
+    "inference_ckpt_path": "/root/.openfold3/of3-p2-155k.pt",
+    "msa_server_url": "https://api.colabfold.com/",
+    "structure_format": "cif",
+    "seeds": [
+      42
+    ],
+    "template_entry_chain_ids": [
+      "4l1o_A",
+      "8bb8_A",
+      "4qgk_B",
+      "1ad3_B",
+      "5fhz_E",
+      "6tgw_D",
+      "5abm_A",
+      "4wp7_A",
+      "5l2o_B",
+      "7qk8_B",
+      "7yob_F",
+      "6alj_A",
+      "3iwk_F",
+      "6tgw_B",
+      "5a2d_B",
+      "7mjc_A",
+      "6k10_A",
+      "6try_A",
+      "4o5h_C",
+      "5gtk_C"
+    ]
+  },
+  "length": 385,
+  "sequence_matches_uniprot_canonical": true,
+  "mean_CA_pLDDT": 95.4992865038961,
+  "min_CA_pLDDT": 53.247547,
+  "fraction_CA_pLDDT_ge_90": 0.8961038961038961,
+  "cofold_confidence": {
+    "iptm": null,
+    "chain_pair_iptm": null,
+    "gpde": null,
+    "has_clash": false,
+    "flags": [
+      "iptm=None below MIN_ACCEPTABLE_IPTM=0.75",
+      "chain_pair_iptm=None below MIN_ACCEPTABLE_CHAIN_PAIR_IPTM=0.75",
+      "gpde=None above MAX_ACCEPTABLE_GPDE=1.0"
+    ],
+    "manual_review_required": true
+  },
+  "template_provenance": {
+    "5FHZ": {
+      "used_as_folding_template_by_this_prediction": true,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    },
+    "8DR9": {
+      "used_as_folding_template_by_this_prediction": false,
+      "note": "Provenance only -- does not affect scoring, ranking, or selection. Both templates run through the identical pipeline and are reported side by side (cell 13)."
+    }
+  },
+  "equal_treatment_policy": "5FHZ and 8DR9 are treated as equally eligible, independently scored homolog sources throughout this notebook. Folding-template overlap is recorded in template_provenance above as provenance only."
+}
