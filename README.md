@@ -300,7 +300,6 @@ Remaining work: completion of MD production across all four systems, MM-PBSA bin
 - **Supervisor:** Dr. Olaitan Awe
 - **Team Lead:** John Adeyemo Adedeji
 - **Team Members:** Tammy Lily Shishodia, Elsayed Hussien, Onifade Olayinka
-- **Roles under recruitment:** omics and statistics, structural and docking, MD and thermodynamics, integration and statistical review.
 
 ---
 
