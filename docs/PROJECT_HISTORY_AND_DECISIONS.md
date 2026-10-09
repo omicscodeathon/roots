@@ -6,8 +6,6 @@
 
 Supervisor: Dr. Olaitan Awe. Team Lead: Dr. Adedeji J.A.
 
-**Status:** Steps 1 through 7 complete with real, generated data. Molecular dynamics production, MM-PBSA binding free energy calculation (Generalized Born and Poisson-Boltzmann, complex-level), and trajectory analysis are complete across all four systems. Manuscript package assembly is in progress.
-
 ## Overview
 
 Ovarian cancer kills more people than most gynaecological cancers because it is caught late, and the tools that catch other cancers early do not exist for it yet. The therapies that work are effective where a patient can reach them, but their cost and distribution put them out of reach for underserved and low- and middle-income populations. What starts as a biology problem ends as a structural one.
