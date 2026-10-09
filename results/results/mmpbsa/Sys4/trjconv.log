@@ -1,0 +1,64 @@
+               :-) GROMACS - gmx trjconv, 2026.3-conda_forge (-:
+
+Executable:   /opt/miniforge/envs/mmpbsa/bin.AVX2_256/gmx
+Data prefix:  /opt/miniforge/envs/mmpbsa
+Working dir:  /root/roots
+Command line:
+  gmx trjconv -f /root/roots/harvest/Sys4/prod_full.part0003.xtc -s /root/roots/harvest/Sys4/prod_full.tpr -n /root/roots/results/mmpbsa/Sys4/complex.ndx -o /root/roots/results/mmpbsa/Sys4/complex_traj.xtc -b 38800 -dt 100 -pbc mol -center
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file /root/roots/harvest/Sys4/prod_full.tpr, VERSION 2026.3-conda_forge (single precision)
+Reading file /root/roots/harvest/Sys4/prod_full.tpr, VERSION 2026.3-conda_forge (single precision)
+Group     0 (         System) has 135916 elements
+Group     1 (        Protein) has  5977 elements
+Group     2 (      Protein-H) has  3000 elements
+Group     3 (        C-alpha) has   385 elements
+Group     4 (       Backbone) has  1155 elements
+Group     5 (      MainChain) has  1539 elements
+Group     6 (   MainChain+Cb) has  1893 elements
+Group     7 (    MainChain+H) has  1898 elements
+Group     8 (      SideChain) has  4079 elements
+Group     9 (    SideChain-H) has  1461 elements
+Group    10 (    Prot-Masses) has  5977 elements
+Group    11 (    non-Protein) has 129939 elements
+Group    12 (          Other) has 129939 elements
+Group    13 (            UNL) has    73 elements
+Group    14 (            POT) has   128 elements
+Group    15 (            CLA) has   123 elements
+Group    16 (           TIP3) has 129615 elements
+Group    17 (            UNL) has    73 elements
+Group    18 (    Protein_UNL) has  6050 elements
+Select a group: Group     0 (         System) has 135916 elements
+Group     1 (        Protein) has  5977 elements
+Group     2 (      Protein-H) has  3000 elements
+Group     3 (        C-alpha) has   385 elements
+Group     4 (       Backbone) has  1155 elements
+Group     5 (      MainChain) has  1539 elements
+Group     6 (   MainChain+Cb) has  1893 elements
+Group     7 (    MainChain+H) has  1898 elements
+Group     8 (      SideChain) has  4079 elements
+Group     9 (    SideChain-H) has  1461 elements
+Group    10 (    Prot-Masses) has  5977 elements
+Group    11 (    non-Protein) has 129939 elements
+Group    12 (          Other) has 129939 elements
+Group    13 (            UNL) has    73 elements
+Group    14 (            POT) has   128 elements
+Group    15 (            CLA) has   123 elements
+Group    16 (           TIP3) has 129615 elements
+Group    17 (            UNL) has    73 elements
+Group    18 (    Protein_UNL) has  6050 elements
+Select a group: Reading frame       0 time 37800.000   Reading frame       0 time 38800.000   
+Precision of /root/roots/harvest/Sys4/prod_full.part0003.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+Reading frame       1 time 38900.000    ->  frame      0 time 38800.000      Reading frame       2 time 39000.000    ->  frame      1 time 38900.000      Reading frame       3 time 39100.000    ->  frame      2 time 39000.000      Reading frame       4 time 39200.000    ->  frame      3 time 39100.000      Reading frame       5 time 39300.000    ->  frame      4 time 39200.000      Reading frame       6 time 39400.000    ->  frame      5 time 39300.000      Reading frame       7 time 39500.000    ->  frame      6 time 39400.000      Reading frame       8 time 39600.000    ->  frame      7 time 39500.000      Reading frame       9 time 39700.000    ->  frame      8 time 39600.000      Reading frame      10 time 39800.000    ->  frame      9 time 39700.000      Reading frame      11 time 39900.000    ->  frame     10 time 39800.000      Reading frame      12 time 40000.000    ->  frame     11 time 39900.000      Reading frame      13 time 40100.000    ->  frame     12 time 40000.000      Reading frame      14 time 40200.000    ->  frame     13 time 40100.000      Reading frame      15 time 40300.000    ->  frame     14 time 40200.000      Reading frame      16 time 40400.000    ->  frame     15 time 40300.000      Reading frame      17 time 40500.000    ->  frame     16 time 40400.000      Reading frame      18 time 40600.000    ->  frame     17 time 40500.000      Reading frame      19 time 40700.000    ->  frame     18 time 40600.000      Reading frame      20 time 40800.000    ->  frame     19 time 40700.000      Reading frame      30 time 41800.000    ->  frame     29 time 41700.000      Reading frame      40 time 42800.000    ->  frame     39 time 42700.000      Reading frame      50 time 43800.000    ->  frame     49 time 43700.000      Reading frame      60 time 44800.000    ->  frame     59 time 44700.000      Reading frame      70 time 45800.000    ->  frame     69 time 45700.000      Reading frame      80 time 46800.000    ->  frame     79 time 46700.000      Reading frame      90 time 47800.000    ->  frame     89 time 47700.000      Reading frame     100 time 48800.000    ->  frame     99 time 48700.000      Reading frame     110 time 49800.000    ->  frame    109 time 49700.000      
+
+Last written: frame    112 time 50000.000
+
+
+GROMACS reminds you: "Science may never come up with a better office communication system than the coffee break." (Earl Wilson)
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for centering
+Selected 1: 'Protein'
+Select group for output
+Selected 18: 'Protein_UNL'

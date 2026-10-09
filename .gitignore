@@ -1,0 +1,6 @@
+*.pem
+*_rsa
+*ed25519*
+*token*
+*secret*
+attachment.txt

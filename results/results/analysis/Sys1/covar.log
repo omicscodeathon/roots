@@ -1,0 +1,21 @@
+Covariance analysis log, written Fri Oct  9 05:07:48 2026
+
+Program: covar
+Working directory: /root/roots/results/analysis/Sys1
+
+Read 167 frames from /root/roots/harvest/Sys1/prod_full.part0003.xtc (time 33400 to 50000 ps)
+Read reference structure for fit from /root/roots/harvest/Sys1/prod_full.tpr
+Read index groups from /root/roots/results/mmpbsa/Sys1/complex.ndx
+
+Analysis group is 'C-alpha' (385 atoms)
+Fit group is 'C-alpha' (385 atoms)
+Analysis is non-mass weighted
+Fit is non-mass weighted
+Diagonalized the 1155x1155 covariance matrix
+Trace of the covariance matrix before diagonalizing: 24.9518
+Trace of the covariance matrix after diagonalizing: 24.9518
+
+Wrote 166 eigenvalues to eigenval.xvg
+Wrote reference structure to eigenvec.trr
+Wrote average structure to average.pdb and eigenvec.trr
+Wrote eigenvectors 1 to 166 to eigenvec.trr

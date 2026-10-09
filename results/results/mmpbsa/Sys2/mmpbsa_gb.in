@@ -1,0 +1,9 @@
+&general
+sys_name="ROOTS", startframe=1, endframe=9999999, interval=1, forcefields="charmm", PBRadii=3, temperature=310,
+/
+&gb
+igb=8, saltcon=0.150, ifqnt=0,
+/
+&decomp
+idecomp=1, dec_verbose=1, print_res="within 6"
+/

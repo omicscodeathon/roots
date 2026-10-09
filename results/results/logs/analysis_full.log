@@ -1,0 +1,62 @@
+
+============================================================
+Sys1
+============================================================
+TPR: /root/roots/harvest/Sys1/first_frame.pdb
+XTC: /root/roots/harvest/Sys1/prod_full.part0003.xtc
+Loaded: 167 frames, 135903 atoms
+Protein: 5977, Ligand: 77
+  Backbone RMSD: nan +/- nan A
+  Ligand RMSD:   nan +/- nan A
+  Rg: nan A
+  H-bond analysis failed: This Universe does not contain charge information
+  PC1 variance: 1617.73+0.00j%, PC2: 344.26+0.00j%
+
+============================================================
+Sys2
+============================================================
+TPR: /root/roots/harvest/Sys2/first_frame.pdb
+XTC: /root/roots/harvest/Sys2/prod_full.part0003.xtc
+Loaded: 132 frames, 135852 atoms
+Protein: 5977, Ligand: 60
+  Backbone RMSD: nan +/- nan A
+  Ligand RMSD:   nan +/- nan A
+  Rg: nan A
+  H-bond analysis failed: This Universe does not contain charge information
+  PC1 variance: 1679.46+0.00j%, PC2: 903.57+0.00j%
+
+============================================================
+Sys3
+============================================================
+TPR: /root/roots/harvest/Sys3/first_frame.pdb
+XTC: /root/roots/harvest/Sys3/prod_full.part0003.xtc
+Loaded: 156 frames, 135898 atoms
+Protein: 5977, Ligand: 67
+  Backbone RMSD: nan +/- nan A
+  Ligand RMSD:   nan +/- nan A
+  Rg: nan A
+  H-bond analysis failed: This Universe does not contain charge information
+  PC1 variance: 1400.98+0.00j%, PC2: 220.81+0.00j%
+
+============================================================
+Sys4
+============================================================
+TPR: /root/roots/harvest/Sys4/first_frame.pdb
+XTC: /root/roots/harvest/Sys4/prod_full.part0003.xtc
+Loaded: 123 frames, 135916 atoms
+Protein: 5977, Ligand: 73
+  Backbone RMSD: nan +/- nan A
+  Ligand RMSD:   nan +/- nan A
+  Rg: nan A
+  H-bond analysis failed: This Universe does not contain charge information
+  PC1 variance: 17824.70+0.00j%, PC2: 6452.23+0.00j%
+
+=== Comparative plots ===
+system  backbone_rmsd_mean  backbone_rmsd_std  ligand_rmsd_mean  ligand_rmsd_std  rg_mean  hbonds_mean  n_frames
+  Sys1                 NaN                NaN               NaN              NaN      NaN          NaN       167
+  Sys2                 NaN                NaN               NaN              NaN      NaN          NaN       132
+  Sys3                 NaN                NaN               NaN              NaN      NaN          NaN       156
+  Sys4                 NaN                NaN               NaN              NaN      NaN          NaN       123
+
+=== ANALYSIS COMPLETE ===
+Output: /root/roots/results/analysis

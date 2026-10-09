@@ -1,0 +1,19 @@
+PLIP — CNP0220660 (middle frame)
+============================================================
+
+H-BONDS (protein donor):
+  SER58 dist=2.61Å
+
+H-BONDS (ligand donor):
+
+HYDROPHOBIC:
+  ILE29 dist=3.85Å
+  VAL110 dist=3.36Å
+  PHE254 dist=3.61Å
+  PHE254 dist=3.71Å
+  ILE204 dist=3.95Å
+
+SALT BRIDGES:
+  LYS56 dist=3.53Å
+
+π-STACKING:

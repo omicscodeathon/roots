@@ -1,0 +1,9 @@
+System,Compound,Frame,HB,Hydrophobic,SaltBridge,Pi_stack,Pi_cation,Halogen,WaterBridge
+Sys1,CNP0220660,first,1,7,1,0,0,0,0
+Sys1,CNP0220660,rep,1,5,1,0,0,0,0
+Sys2,CNP0358193,first,0,3,0,0,0,0,0
+Sys2,CNP0358193,rep,0,3,0,0,0,0,0
+Sys3,CNP0384182,first,3,6,0,0,0,0,0
+Sys3,CNP0384182,rep,9,6,0,0,0,0,0
+Sys4,CNP0088713,first,3,5,0,0,0,0,0
+Sys4,CNP0088713,rep,4,3,0,0,0,0,0

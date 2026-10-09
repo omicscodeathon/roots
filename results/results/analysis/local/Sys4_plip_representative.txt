@@ -1,0 +1,19 @@
+PLIP — CNP0088713 (middle frame)
+============================================================
+
+H-BONDS (protein donor):
+  GLU59 dist=2.82Å
+  TRP32 dist=2.98Å
+  SER107 dist=3.97Å
+
+H-BONDS (ligand donor):
+  GLU59 dist=3.56Å
+
+HYDROPHOBIC:
+  TRP32 dist=3.52Å
+  GLN160 dist=3.83Å
+  PHE254 dist=3.99Å
+
+SALT BRIDGES:
+
+π-STACKING:

@@ -1,0 +1,204 @@
+# You can alter the variables below
+INPUT['csv_format'] = 1
+INPUT['dec_verbose'] = 1
+INPUT['exp_ki'] = 0.0
+INPUT['sys_name'] = 'ROOTS'
+INPUT['ie_segment'] = 25
+INPUT['interaction_entropy'] = 0
+INPUT['c2_entropy'] = 0
+INPUT['verbose'] = 1
+#
+# You can alter the variables below with care
+INPUT['inp'] = 1
+#
+# These variables are deprecated and will be remove in next versions
+#
+# MODIFY NOTHING BELOW HERE, OR GET WHAT YOU DESERVE
+INPUT['startframe'] = 1
+INPUT['endframe'] = 9999999
+INPUT['interval'] = 1
+INPUT['forcefields'] = ['charmm']
+INPUT['ions_parameters'] = 1
+INPUT['PBRadii'] = 3
+INPUT['temperature'] = 310.0
+INPUT['qh_entropy'] = 0
+INPUT['assign_chainID'] = 0
+INPUT['full_traj'] = 0
+INPUT['gmx_path'] = ''
+INPUT['keep_files'] = 2
+INPUT['netcdf'] = ''
+INPUT['solvated_trajectory'] = 1
+INPUT['gbrun'] = False
+INPUT['igb'] = 5
+INPUT['intdiel'] = 1.0
+INPUT['extdiel'] = 78.5
+INPUT['saltcon'] = 0.0
+INPUT['surften'] = 0.0072
+INPUT['surfoff'] = 0.0
+INPUT['molsurf'] = 0
+INPUT['msoffset'] = 0.0
+INPUT['probe'] = 1.4
+INPUT['ifqnt'] = 0
+INPUT['qm_theory'] = ''
+INPUT['qm_residues'] = ''
+INPUT['qmcharge_com'] = 0
+INPUT['qmcharge_lig'] = 0
+INPUT['qmcharge_rec'] = 0
+INPUT['qmcut'] = 9999.0
+INPUT['pbrun'] = True
+INPUT['ipb'] = 2
+INPUT['sander_apbs'] = 0
+INPUT['indi'] = 1.0
+INPUT['exdi'] = 80.0
+INPUT['emem'] = 1.0
+INPUT['smoothopt'] = 1
+INPUT['istrng'] = 0.15
+INPUT['radiopt'] = 0
+INPUT['prbrad'] = 1.4
+INPUT['iprob'] = 2.0
+INPUT['sasopt'] = 0
+INPUT['arcres'] = 0.25
+INPUT['memopt'] = 0
+INPUT['mprob'] = 2.7
+INPUT['mthick'] = 40.0
+INPUT['mctrdz'] = 0.0
+INPUT['poretype'] = 1
+INPUT['npbopt'] = 0
+INPUT['solvopt'] = 1
+INPUT['accept'] = 0.001
+INPUT['linit'] = 1000
+INPUT['fillratio'] = 4.0
+INPUT['scale'] = 0.5
+INPUT['nbuffer'] = 0.0
+INPUT['nfocus'] = 2
+INPUT['fscale'] = 8
+INPUT['npbgrid'] = 1
+INPUT['bcopt'] = 5
+INPUT['eneopt'] = 2
+INPUT['frcopt'] = 0
+INPUT['scalec'] = 0
+INPUT['cutfd'] = 5.0
+INPUT['cutnb'] = 0.0
+INPUT['nsnba'] = 1
+INPUT['decompopt'] = 2
+INPUT['use_rmin'] = 1
+INPUT['sprob'] = 0.557
+INPUT['vprob'] = 1.3
+INPUT['rhow_effect'] = 1.129
+INPUT['use_sav'] = 1
+INPUT['cavity_surften'] = 0.0378
+INPUT['cavity_offset'] = -0.5692
+INPUT['maxsph'] = 400
+INPUT['maxarcdot'] = 1500
+INPUT['npbverb'] = 0
+INPUT['rismrun'] = False
+INPUT['closure'] = ['kh']
+INPUT['thermo'] = 'std'
+INPUT['noasympcorr'] = 1
+INPUT['buffer'] = 14.0
+INPUT['solvcut'] = -1.0
+INPUT['grdspc'] = [0.5]
+INPUT['ng'] = [-1, -1, -1]
+INPUT['solvbox'] = [-1, -1, -1]
+INPUT['tolerance'] = [1e-05]
+INPUT['ljTolerance'] = -1.0
+INPUT['asympKSpaceTolerance'] = -1.0
+INPUT['treeDCF'] = 1
+INPUT['treeTCF'] = 1
+INPUT['treeCoulomb'] = 0
+INPUT['treeDCFMAC'] = 0.1
+INPUT['treeTCFMAC'] = 0.1
+INPUT['treeCoulombMAC'] = 0.1
+INPUT['treeDCFOrder'] = 2
+INPUT['treeTCFOrder'] = 2
+INPUT['treeCoulombOrder'] = 2
+INPUT['treeDCFN0'] = 500
+INPUT['treeTCFN0'] = 500
+INPUT['treeCoulombN0'] = 500
+INPUT['mdiis_del'] = 0.7
+INPUT['mdiis_nvec'] = 5
+INPUT['mdiis_restart'] = 10.0
+INPUT['maxstep'] = 10000
+INPUT['npropagate'] = 5
+INPUT['polardecomp'] = 0
+INPUT['rism_verbose'] = 0
+INPUT['alarun'] = False
+INPUT['mutant_res'] = ''
+INPUT['mutant'] = 'ALA'
+INPUT['mutant_only'] = 0
+INPUT['cas_intdiel'] = 0
+INPUT['intdiel_nonpolar'] = 1
+INPUT['intdiel_polar'] = 3
+INPUT['intdiel_positive'] = 5
+INPUT['intdiel_negative'] = 5
+INPUT['decomprun'] = True
+INPUT['idecomp'] = 1
+INPUT['print_res'] = '30-34,57-62,87-93,96,105,107-112,114-115,161,205-206,208-209,212-213,252-255,386'
+INPUT['nmoderun'] = False
+INPUT['nmstartframe'] = 1
+INPUT['nmendframe'] = 1000000
+INPUT['nminterval'] = 1
+INPUT['nmode_igb'] = 1
+INPUT['nmode_istrng'] = 0.0
+INPUT['dielc'] = 1.0
+INPUT['drms'] = 0.001
+INPUT['maxcyc'] = 10000
+INPUT['gbsa'] = 2
+INPUT['rismrun_std'] = False
+INPUT['rismrun_gf'] = False
+INPUT['pbtemp'] = 310.0
+INPUT['receptor_mask'] = ':1-385'
+INPUT['ligand_mask'] = ':386'
+FILES.clean = False
+FILES.complex_fixed = '_GMXMMPBSA_COM_FIXED.pdb'
+FILES.complex_groups = [1, 13]
+FILES.complex_index = '_GMXMMPBSA_COM_index.ndx'
+FILES.complex_prmtop = 'COM.prmtop'
+FILES.complex_top = '/root/roots/topo/Sys1/topol.top'
+FILES.complex_tpr = '/root/roots/harvest/Sys1/prod_full.tpr'
+FILES.complex_trajs = ['COM_traj_0.xtc']
+FILES.createinput = None
+FILES.dec_energies = 'FINAL_DECOMP_MMPBSA_PB.csv'
+FILES.decompout = 'FINAL_DECOMP_MMPBSA_PB.dat'
+FILES.gui = False
+FILES.infilehelp = False
+FILES.input_file = 'mmpbsa_pb.in'
+FILES.ligand_group = None
+FILES.ligand_index = None
+FILES.ligand_mol2 = None
+FILES.ligand_prmtop = 'LIG.prmtop'
+FILES.ligand_top = None
+FILES.ligand_tpr = None
+FILES.ligand_trajs = None
+FILES.mutant_complex_prmtop = None
+FILES.mutant_ligand_prmtop = 'MUT_LIG.prmtop'
+FILES.mutant_receptor_prmtop = 'MUT_REC.prmtop'
+FILES.output_file = 'FINAL_RESULTS_MMPBSA_PB.dat'
+FILES.prefix = '_GMXMMPBSA_'
+FILES.receptor_group = None
+FILES.receptor_index = None
+FILES.receptor_prmtop = 'REC.prmtop'
+FILES.receptor_top = None
+FILES.receptor_tpr = None
+FILES.receptor_trajs = None
+FILES.reference_structure = None
+FILES.stability = False
+FILES.xvvfile = '/opt/miniforge/envs/mmpbsa/dat/mmpbsa/spc.xvv'
+size = 4
+numframes = 157
+numframes_nmode = 0
+mutant_index = None
+mut_str = ''
+using_chamber = True
+|Input file:
+|--------------------------------------------------------------
+|&general
+|sys_name="ROOTS", startframe=1, endframe=9999999, interval=1, forcefields="charmm", PBRadii=3, temperature=310,
+|/
+|&pb
+|istrng=0.150, fillratio=4.0, inp=1, radiopt=0, indi=1.0, exdi=80.0,
+|/
+|&decomp
+|idecomp=1, dec_verbose=1, print_res="within 6"
+|/
+|--------------------------------------------------------------

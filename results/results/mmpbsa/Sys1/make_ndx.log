@@ -1,0 +1,56 @@
+               :-) GROMACS - gmx make_ndx, 2026.3-conda_forge (-:
+
+Executable:   /opt/miniforge/envs/mmpbsa/bin.AVX2_256/gmx
+Data prefix:  /opt/miniforge/envs/mmpbsa
+Working dir:  /root/roots
+Command line:
+  gmx make_ndx -f /root/roots/harvest/Sys1/prod_full.tpr -o /root/roots/results/mmpbsa/Sys1/complex.ndx
+
+
+Reading structure file
+Reading file /root/roots/harvest/Sys1/prod_full.tpr, VERSION 2026.3-conda_forge (single precision)
+Reading file /root/roots/harvest/Sys1/prod_full.tpr, VERSION 2026.3-conda_forge (single precision)
+
+GROMACS reminds you: "If You're So Special Why aren't You Dead ?" (The Breeders)
+
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:   385    Protein residues
+There are: 43452      Other residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+  0 System              : 135903 atoms
+  1 Protein             :  5977 atoms
+  2 Protein-H           :  3000 atoms
+  3 C-alpha             :   385 atoms
+  4 Backbone            :  1155 atoms
+  5 MainChain           :  1539 atoms
+  6 MainChain+Cb        :  1893 atoms
+  7 MainChain+H         :  1898 atoms
+  8 SideChain           :  4079 atoms
+  9 SideChain-H         :  1461 atoms
+ 10 Prot-Masses         :  5977 atoms
+ 11 non-Protein         : 129926 atoms
+ 12 Other               : 129926 atoms
+ 13 UNL                 :    77 atoms
+ 14 POT                 :   129 atoms
+ 15 CLA                 :   123 atoms
+ 16 TIP3                : 129597 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+Found 77 atoms with residue name UNL
+
+> 
+Copied index group 1 'Protein'
+Found 77 atoms with residue name UNL
+Merged two groups with OR: 5977 77 -> 6054
+
+> 

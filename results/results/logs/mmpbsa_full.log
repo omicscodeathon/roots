@@ -1,0 +1,18 @@
+=== Fri Oct  9 01:46:36 AM UTC 2026 cores=16 NP=4 ===
+[Sys1] prepped P=1 L=13 from 34400ps
+[Sys2] prepped P=1 L=13 from 37900ps
+[Sys3] prepped P=1 L=13 from 35500ps
+[Sys4] prepped P=1 L=13 from 38800ps
+[Sys3] GB cores 8-11 (01:46:46)
+[Sys1] GB cores 0-3 (01:46:46)
+[Sys2] GB cores 4-7 (01:46:46)
+[Sys4] GB cores 12-15 (01:46:46)
+[Sys4] PB (01:58:51)
+[Sys2] PB (01:59:34)
+[Sys3] PB (02:02:19)
+[Sys1] PB (02:03:40)
+[Sys4] COMPLETE (02:38:07)
+[Sys2] COMPLETE (02:42:11)
+[Sys3] COMPLETE (02:49:42)
+[Sys1] COMPLETE (02:54:23)
+=== ALL COMPLETE === Fri Oct  9 02:54:23 AM UTC 2026

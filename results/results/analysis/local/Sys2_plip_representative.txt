@@ -1,0 +1,15 @@
+PLIP — CNP0358193 (middle frame)
+============================================================
+
+H-BONDS (protein donor):
+
+H-BONDS (ligand donor):
+
+HYDROPHOBIC:
+  ILE113 dist=3.80Å
+  VAL114 dist=3.88Å
+  ALA117 dist=3.92Å
+
+SALT BRIDGES:
+
+π-STACKING:
